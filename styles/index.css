@@ -24,7 +24,7 @@ body {
  }
 .container {
     min-height: 100vh;
-    padding: 5rem 0.5rem;
+    padding: 1.5rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +78,7 @@ a {
 .title {
     margin: 0;
     line-height: 1.15;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .title,
@@ -93,8 +93,8 @@ a {
 
 .siteHeader {
     width: 100%;
-    min-height: 275px;
-    padding: 5rem 2.5rem;
+    
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
     background: var(--lapis-gradient);
     color: white;
     text-align: center;
@@ -127,8 +127,7 @@ code {
     justify-content: center;
     flex-wrap: wrap;
 
-    max-width: 800px;
-    margin-top: 3rem;
+    margin-top: .5rem;
 }
 
 .card {
