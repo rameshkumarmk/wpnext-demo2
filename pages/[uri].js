@@ -9,7 +9,7 @@ export default function SlugPage({ post }) {
   return (
     <div>
       <Head>
-        <title>Headless WP Next Starter</title>
+        <title>Dinamalar News Detail</title>
         <link rel="icon" href="favicon.ico"></link>
       </Head>
 
@@ -17,12 +17,15 @@ export default function SlugPage({ post }) {
           <div className="siteHeader">
             <h1 className="title">
                 {post.title}
+              
             </h1>
             <p>✍️  &nbsp;&nbsp;{`${post.author.node.firstName}`} | 🗓️ &nbsp;&nbsp;{ new Date(post.date).toLocaleDateString() }</p>
           </div>
           <figure>
+            
                 <img
-                  src="https://w.dinamalar.com/wp-content/uploads/2022/08/Tamil_News_large_3108578.jpg"
+                src={`https://w.dinamalar.com/${post.featuredImage.node.sourceUrl}`}
+                
                   alt="Dinamalar Tamil News"
                 />
               </figure>
@@ -46,12 +49,20 @@ export async function getStaticProps({ params }){
       content
       date
       uri
+      featuredImage {
+        node {
+          id
+          sourceUrl
+        }
+      }
       author {
         node {
           firstName
         }
       }
+      
     }
+  
   }
   `
   const response = await client.query({
