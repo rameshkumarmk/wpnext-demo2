@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Footer from '../components/Footer'
 import { getPostByUri } from '../lib/test-data';
 import { client } from '../lib/apollo';
@@ -14,6 +15,9 @@ export default function SlugPage({ post }) {
       </Head>
 
       <main>
+      <nav> <Link href="/"><a className='backbtn'>Home &raquo; Latest News </a></Link>
+    
+    </nav>
           <div className="siteHeader">
             <h1 className="title">
                 {post.title}

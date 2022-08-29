@@ -64,6 +64,12 @@ a {
     text-decoration: none;
 }
 
+.backbtn{ padding: .5em 1em;
+    text-align: left;
+    color: #909090;
+    background: #000;
+    border-radius: 50px;
+    display: inline-block;}
 .title a {
     color: #0070f3;
     text-decoration: none;
