@@ -84,7 +84,7 @@ a {
 .title {
     margin: 0;
     line-height: 1.15;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .title,
@@ -97,11 +97,12 @@ a {
     font-size: 1.5rem;
 }
 
+
 .padright { padding-right: 1rem;}
 .siteHeader {
     width: 100%;
     
-    padding: 2.5rem 2.5rem 1rem 2.5rem;
+    padding: 1rem;
     background: var(--lapis-gradient);
     color: white;
     text-align: center;
@@ -178,4 +179,8 @@ code {
         width: 100%;
         flex-direction: column;
     }
+    figure{ margin: 0; padding: 0;}
+figure img{ max-width: 100%;}
+article{ padding: .5em;}
+footer{ padding: .5em;}
 }
