@@ -8,6 +8,7 @@ import { gql } from "@apollo/client"
 
 
 export default function Home({ posts }) {
+  
   return (
     <div className="container">
       <Head>
@@ -50,7 +51,6 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps(){
-
   const GET_POSTS =gql
   `
   query GetAllPosts {
@@ -64,11 +64,17 @@ export async function getStaticProps(){
     }
   }
   `
+  
   const response = await client.query(
   {
     query : GET_POSTS
+    
   })
+ 
+ 
   const posts = response?.data?.posts?.nodes
+
+  
   return {
     props: {
       posts
