@@ -139,7 +139,7 @@ code {
 }
 
 .card {
-    margin: 1rem;
+    margin: .5rem;
     flex-basis: 45%;
     padding: 1rem;
     text-align: left;
@@ -224,7 +224,7 @@ nav{ box-shadow: 0 2px 3px rgba(0,0,0,.05); background: #fafafa; border-bottom: 
         width: 100%;
         flex-direction: column;
     }
-    .card{ padding: 0; margin: .5rem .8rem;}
+    .card{ padding: 0; margin: .5rem ;}
     .card h3{ padding: 0 10px 10px 10px;}
     .container{ padding:0;}
     .siteHeader{ padding: 1rem 1rem 0rem 1rem;}
