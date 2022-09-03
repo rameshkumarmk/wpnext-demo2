@@ -7,6 +7,7 @@ import { client } from "../lib/apollo";
 import { gql } from "@apollo/client"
 
 
+
 export default function Home({ posts }) {
   
   return (
@@ -56,8 +57,7 @@ export async function getStaticProps(){
   const GET_POSTS =gql
   `
   query GetAllPosts {
-    posts {
-      nodes {
+    posts(first: 100, where: { orderby: { field: DATE, order: DESC } }) {      nodes {
         title
         content
         uri
