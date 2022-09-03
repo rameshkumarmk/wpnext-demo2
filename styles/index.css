@@ -106,6 +106,7 @@ a {
     background:#fff;
     color: #000;
     text-align: left;
+    border-bottom: #eee solid 1px;
 }
 
 .siteHeader .title { 
