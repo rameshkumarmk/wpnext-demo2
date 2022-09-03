@@ -27,11 +27,7 @@ export default function Home({ posts }) {
         height="70%"
         alt="logo"
       />
-        
-        <p className="description">
-        No.1 Tamil news website in the world.
-        </p>
-        
+           
         
         
       
