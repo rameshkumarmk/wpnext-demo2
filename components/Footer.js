@@ -2,11 +2,11 @@
 export default function Footer (){
     return (
         <footer>
-        <span className="padright"> © 2022 </span>       <a
+          <a
             href="https://www.dinamalar.com/"
             target="_blank"
             rel="noopener noreferrer"
-            >           Dinamalar  - No.1 Tamil news website in the world.
+            >          © 2022 Dinamalar  - All Rights Reserved
             </a> 
         </footer>
     )

@@ -61,6 +61,12 @@ export async function getStaticProps(){
         title
         content
         uri
+        featuredImage {
+          node {
+            id
+            sourceUrl
+          }
+        }
         date
       }
     }

@@ -16,9 +16,16 @@ export default function SlugPage({ post }) {
       </Head>
 
       <main>
-      <nav> <Link href="/"><a className='backbtn'>Home &raquo; Latest News </a></Link>
-    
+      <nav>
+      <div className="page__section">
+        <ul className="breadcrumbs">
+          <li className="breadcrumbs__item breadcrumbs_type3"><Link href="/"><a className="breadcrumbs__element">Home</a></Link></li>
+        
+          <li className="breadcrumbs__item breadcrumbs__item_active">Latest Post</li>
+        </ul>
+      </div>
     </nav>
+
           <div className="siteHeader">
             <h1 className="title">
                 {post.title}
