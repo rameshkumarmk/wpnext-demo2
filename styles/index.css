@@ -178,9 +178,9 @@ code {
 }
 nav{ box-shadow: 0 2px 3px rgba(0,0,0,.05); background: #fafafa; border-bottom: 1px solid #eee; width: 100%;}
 .backbtn{ padding: .5em 1em;
-    text-align: left;
-    color: #000;
-    display: block;}
+    text-align: left; font-size: 1.2em;
+    color: #666; background: #fafafa; border-bottom: 1px solid #eee;
+    display: block; box-shadow: 0 2px 3px rgba(0,0,0,.05);}
 
 
     .page__section {
