@@ -42,6 +42,7 @@ export default function SlugPage({ post }) {
             
             <article dangerouslySetInnerHTML={{__html: post.content}}>   
             </article>
+            <p> <Link href="/"><a className="backbtnbtm">&larr; Back </a></Link> </p>
       </main>
 
       <Footer></Footer>
