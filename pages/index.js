@@ -54,7 +54,7 @@ export async function getStaticProps(){
   const GET_POSTS =gql
   `
   query GetAllPosts {
-    posts(first: 500, where: { orderby: { field: DATE, order: DESC } }) {      nodes {
+    posts(first: 110, where: { orderby: { field: DATE, order: DESC } }) {      nodes {
         title
         content
         uri
