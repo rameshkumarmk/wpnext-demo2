@@ -29,7 +29,7 @@ export default function SlugPage({ post }) {
                 {post.title}
               
             </h1>
-            <p>✍️  &nbsp;&nbsp;{`${post.author.node.firstName}`} | 🗓️ &nbsp;&nbsp;{ new Date(post.date).toLocaleDateString() }</p>
+            <p className='datetime'>🗓️  &nbsp; {new Date(post.date).toLocaleDateString()} | &nbsp; 🕜 &nbsp;{new Date(post.date).toLocaleTimeString()}</p>
           </div>
           <figure>
             

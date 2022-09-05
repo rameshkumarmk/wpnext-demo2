@@ -191,7 +191,7 @@ nav{ box-shadow: 0 2px 3px rgba(0,0,0,.05); background: #fafafa; border-bottom: 
             color: #fff; background:#0167db; border: 1px solid #0070f3;
             display: inline-block; box-shadow: 0 2px 3px rgba(0,0,0,.05);}
 
-
+.datetime{ color: #666;}
     .page__section {
        
         padding: 1rem 2rem;
