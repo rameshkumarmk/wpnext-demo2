@@ -227,6 +227,8 @@ nav{ box-shadow: 0 2px 3px rgba(0,0,0,.05); background: #fafafa; border-bottom: 
         padding-right: 0;
         color:#f8dede !important;
       }
+      .bdr{ border-bottom: #0076dc solid 5px; width: 100%;}
+      .bdr-red{ border-bottom: #dc0025 solid 5px; width: 100%;}
 
 @media (max-width: 600px) {
     .grid {

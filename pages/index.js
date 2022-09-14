@@ -43,6 +43,7 @@ export default function Home({ posts }) {
             })
           }
         </div>
+        
       </main>
       
       <Footer></Footer>
@@ -80,10 +81,13 @@ export async function getStaticProps(){
   const posts = response?.data?.posts?.nodes
 
   
+
   return {
     props: {
       posts
     },
-    revalidate: 5, // In seconds
+    revalidate: 1, // In seconds
+    
   }
+  
 }
