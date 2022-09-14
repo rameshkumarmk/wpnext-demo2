@@ -5,7 +5,7 @@ export default function PostCard ({ post }){
         <Link href={post.uri} className={"card"}>
             <a className="card">
             <img
-                src={`https://w.dinamalar.com/${post.featuredImage.node.sourceUrl}`}
+                 src={`https://w.dinamalar.com/wp-content/uploads/2022/09/Tamil_News_large_3122565.jpg}`}
                 
                   alt="Dinamalar Tamil News"
                 />
