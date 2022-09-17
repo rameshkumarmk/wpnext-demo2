@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import Image from 'next/image';
 import Footer from '../components/Footer';
 import PostCard from '../components/PostCard';
 import { getAllPosts } from '../lib/test-data';
@@ -22,13 +22,7 @@ export default function Home({ posts }) {
       
       
       <main>
-      <img
-        style={{ cursor: "pointer" }}
-        src="https://img.dinamalar.com/images/dmrenglishlogonew.png"
-        height="70%"
-        alt="logo"
-      />
-           
+      <Image style={{ cursor: "pointer" }} src="https://img.dinamalar.com/images/dmrenglishlogonew.png" alt="DMR Logo" width={200} height={51} />
         
         
       

@@ -4,6 +4,7 @@ import { client } from "../lib/apollo"
 import NextNProgress from "nextjs-progressbar";
 
 
+
 function MyApp({ Component, pageProps }) {
   
 
