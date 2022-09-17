@@ -1,11 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Footer from '../components/Footer';
 import PostCard from '../components/PostCard';
 import { getAllPosts } from '../lib/test-data';
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client"
-import getConfig from 'next/config';
 
 
 export default function Home({ posts }) {
@@ -22,7 +20,7 @@ export default function Home({ posts }) {
       
       
       <main>
-      <Image style={{ cursor: "pointer" }} src="https://img.dinamalar.com/images/dmrenglishlogonew.png" alt="DMR Logo" width={200} height={51} />
+      <img style={{ cursor: "pointer" }} src="https://img.dinamalar.com/images/dmrenglishlogonew.png" alt="DMR Logo" width={200} height={51} />
         
         
       

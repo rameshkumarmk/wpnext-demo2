@@ -4,7 +4,6 @@ import Footer from '../components/Footer'
 import { getPostByUri } from '../lib/test-data';
 import { client } from '../lib/apollo';
 import { gql } from '@apollo/client';
-import Image from 'next/image';
 
 export default function SlugPage({ post }) {
 
@@ -35,7 +34,7 @@ export default function SlugPage({ post }) {
           
           <figure>
             
-                <Image src={`https://w-dmr.gumlet.io${post.featuredImage.node.sourceUrl}`}
+                <img src={`https://w.dinamalar.com/${post.featuredImage.node.sourceUrl}`}
                 
                   alt="Dinamalar Tamil News" width={600} height={413}
                 />
@@ -45,10 +44,7 @@ export default function SlugPage({ post }) {
             </article>
             <p> <Link href="/"><a className="backbtnbtm">&larr; Back </a></Link> </p>
 
-            <div className="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Hey Checking!</strong> You should close the button via bootstrap js.
-  <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+            
       </main>
 
       <Footer></Footer>
