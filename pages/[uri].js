@@ -36,7 +36,7 @@ export default function SlugPage({ post }) {
             
                 <img src={`https://w.dinamalar.com/${post.featuredImage.node.sourceUrl}`}
                 
-                  alt="Dinamalar Tamil News" width={600} height={413}
+                  alt="Dinamalar Tamil News"
                 />
               </figure>
             
