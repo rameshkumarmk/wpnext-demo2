@@ -5,7 +5,7 @@ import PostCard from '../components/PostCard';
 import { getAllPosts } from '../lib/test-data';
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client"
-
+import getConfig from 'next/config';
 
 
 export default function Home({ posts }) {
@@ -75,6 +75,7 @@ export async function getStaticProps(){
   const posts = response?.data?.posts?.nodes
 
   
+  
 
   return {
     props: {
@@ -83,5 +84,6 @@ export async function getStaticProps(){
     revalidate: 1, // In seconds
     
   }
+  
   
 }

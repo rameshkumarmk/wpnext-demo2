@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import { getPostByUri } from '../lib/test-data';
 import { client } from '../lib/apollo';
 import { gql } from '@apollo/client';
+import Image from 'next/image';
 
 export default function SlugPage({ post }) {
 
@@ -31,11 +32,12 @@ export default function SlugPage({ post }) {
             </h1>
             <p className='datetime'>🗓️  &nbsp; {new Date(post.date).toLocaleDateString()} | &nbsp; 🕜 &nbsp;{new Date(post.date).toLocaleTimeString()}</p>
           </div>
+          
           <figure>
             
-                <img className='img-fluid' src={`https://w-dmr.gumlet.io${post.featuredImage.node.sourceUrl}`}
+                <Image src={`https://w-dmr.gumlet.io${post.featuredImage.node.sourceUrl}`}
                 
-                  alt="Dinamalar Tamil News"
+                  alt="Dinamalar Tamil News" width={600} height={413}
                 />
               </figure>
             
@@ -93,6 +95,8 @@ export async function getStaticProps({ params }){
     }
   }
 }
+
+
 
 export async function getStaticPaths(){
     const paths = []
