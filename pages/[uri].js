@@ -45,7 +45,7 @@ export default function SlugPage({ post }) {
 
             <div className="alert alert-warning alert-dismissible fade show" role="alert">
   <strong>Hey Checking!</strong> You should close the button via bootstrap js.
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
       </main>
 
