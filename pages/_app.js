@@ -18,13 +18,11 @@ function MyApp({ Component, pageProps }) {
 //  bootstrap CDN
 <link
 href="https://img.dinamalar.com/js/bootstrap5.min.css" rel="stylesheet"
-crossorigin="anonymous" 
 />
 </Head>
   
 <Script
-src="https://img.dinamalar.com/js/bootstrap5.bundle.min.js"
-crossorigin="anonymous"/>
+src="https://img.dinamalar.com/js/bootstrap5.bundle.min.js"/>
 
     <ApolloProvider client={client}>
       <NextNProgress />
