@@ -33,7 +33,7 @@ export default function SlugPage({ post }) {
           </div>
           <figure>
             
-                <img src={`https://w-dmr.gumlet.io${post.featuredImage.node.sourceUrl}`}
+                <img className='img-fluid' src={`https://w-dmr.gumlet.io${post.featuredImage.node.sourceUrl}`}
                 
                   alt="Dinamalar Tamil News"
                 />
@@ -42,6 +42,11 @@ export default function SlugPage({ post }) {
             <article dangerouslySetInnerHTML={{__html: post.content}}>   
             </article>
             <p> <Link href="/"><a className="backbtnbtm">&larr; Back </a></Link> </p>
+
+            <div className="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Hey Checking!</strong> You should close the button via bootstrap js.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
       </main>
 
       <Footer></Footer>
