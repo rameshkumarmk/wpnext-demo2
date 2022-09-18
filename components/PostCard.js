@@ -6,7 +6,7 @@ export default function PostCard ({ post }){
     return (
         <Link href={post.uri} className={"card"}>
             <a className="card">
-            <img src={`https://w-dmr.gumlet.io/${post.featuredImage.node.sourceUrl}`}
+            <img src={`https://w-dmr.gumlet.io${post.featuredImage.node.sourceUrl}`}
                 
                   alt="Dinamalar Tamil News"
                 />
