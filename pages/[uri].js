@@ -34,7 +34,7 @@ export default function SlugPage({ post }) {
           
           <figure>
             
-                <img src={`https://w.dinamalar.com/${post.featuredImage.node.sourceUrl}`}
+                <img src={`https://w-dmr.gumlet.io${post.featuredImage.node.sourceUrl}`}
                 
                   alt="Dinamalar Tamil News"
                 />
