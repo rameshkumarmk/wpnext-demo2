@@ -20,7 +20,7 @@ export default function Home({ posts }) {
       
       
       <main>
-      <img style={{ cursor: "pointer" }} src="https://img.dinamalar.com/images/dmrenglishlogonew.png" alt="DMR Logo" width={200} height={51} />
+      <img style={{ cursor: "pointer" }} src="https://img-dinamalar.gumlet.io/images/dmrenglishlogonew.png" alt="DMR Logo" width={200} height={51} />
         
         
       
