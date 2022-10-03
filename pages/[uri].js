@@ -4,7 +4,12 @@ import Footer from '../components/Footer'
 import { getPostByUri } from '../lib/test-data';
 import { client } from '../lib/apollo';
 import { gql } from '@apollo/client';
+import Image from 'next/image';
 
+const gumletLoader = ({ src, width, quality }) => {
+  return `https://w-dmr.gumlet.io/${src}?w=${width}&q=${quality || 75}`
+  
+}
 export default function SlugPage({ post }) {
 
   return (
@@ -33,11 +38,20 @@ export default function SlugPage({ post }) {
           </div>
           
           <figure>
+          <Image
+      loader={gumletLoader}
+      src={post.featuredImage.node.sourceUrl}
+      alt="Dinamalar Tamil News"
+      width={600}
+      height={413}
+      layout="responsive"
+
+    />
             
-                <img src={`https://w.dinamalar.com/${post.featuredImage.node.sourceUrl}`}
+          {/* <Image src={`https://w-dmr.gumlet.io/${post.featuredImage.node.sourceUrl}`}
                 
-                  alt="Dinamalar Tamil News"
-                />
+                  alt="Dinamalar Tamil News" width={500} height={413} layout="responsive"
+                /> */}
               </figure>
             
             <article dangerouslySetInnerHTML={{__html: post.content}}>   
