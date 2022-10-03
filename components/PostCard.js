@@ -13,6 +13,7 @@ export default function PostCard ({ post }){
     return (
         <Link href={post.uri} className={"card"}>
             <a className="card">
+<<<<<<< HEAD
             <Image
       loader={gumletLoader}
       src={post.featuredImage.node.sourceUrl}
@@ -22,6 +23,9 @@ export default function PostCard ({ post }){
       layout="responsive"
     />
             {/* <Image src={`https://w-dmr.gumlet.io/${post.featuredImage.node.sourceUrl}?q=75`}
+=======
+            <img src={`https://w-dmr.gumlet.io${post.featuredImage.node.sourceUrl}`}
+>>>>>>> 424cdb6a13f50601960e7af4d1e9b8cec9becb5e
                 
                 alt="Dinamalar Tamil News" width={500} height={413} layout="responsive"
                 /> */}

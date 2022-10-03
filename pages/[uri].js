@@ -45,13 +45,7 @@ export default function SlugPage({ post }) {
       width={600}
       height={413}
       layout="responsive"
-
     />
-            
-          {/* <Image src={`https://w-dmr.gumlet.io/${post.featuredImage.node.sourceUrl}`}
-                
-                  alt="Dinamalar Tamil News" width={500} height={413} layout="responsive"
-                /> */}
               </figure>
             
             <article dangerouslySetInnerHTML={{__html: post.content}}>   
