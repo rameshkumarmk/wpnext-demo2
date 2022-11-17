@@ -7,7 +7,7 @@ import { gql } from '@apollo/client';
 import Image from 'next/image';
 
 const gumletLoader = ({ src, width, quality }) => {
-  return `https://w-dmr.gumlet.io/${src}?w=${width}&q=${quality || 75}`
+  return `https://w-dmr.gumlet.io${src}?w=${width}&q=${quality || 75}`
   
 }
 export default function SlugPage({ post }) {
